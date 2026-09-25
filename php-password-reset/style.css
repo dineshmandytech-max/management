@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+form input {
+    width: 280px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.topic-home {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.topic-home p,
+.topic-home a {
+    font-size: 20px;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    background: white;
+    border: 1px solid gainsboro;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+table {
+    width: 100%;
+    min-width: 1200px;
+    margin: 0;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 14px;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid black;
+}
+
+th {
+    background: black;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+td {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+    width: 60px;
+    text-align: center;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    width: 130px;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+    width: 180px;
+    font-weight: 600;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+    width: 110px;
+}
+
+th:nth-child(5),
+td:nth-child(5) {
+    width: 110px;
+}
+
+th:nth-child(6),
+td:nth-child(6) {
+    width: 160px;
+}
+
+th:nth-child(7),
+td:nth-child(7) {
+    width: 280px;
+}
+
+th:nth-child(8),
+td:nth-child(8) {
+    width: 350px;
+}
+
+.btn {
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: solid 1px black;
+}
+
+td img {
+    display: block;
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.ingredients,
+.summary {
+    line-height: 1.6;
+}
