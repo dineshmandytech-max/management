@@ -1,3 +1,4 @@
+```dockerfile
 FROM composer:2 AS dependencies
 
 WORKDIR /app
@@ -8,6 +9,8 @@ RUN composer install --no-dev --no-interaction --no-progress --optimize-autoload
 
 
 FROM dunglas/frankenphp:1-php8.4-alpine
+
+RUN install-php-extensions mysqli
 
 WORKDIR /app
 
@@ -20,3 +23,4 @@ COPY . .
 ENV PORT=80
 
 CMD ["frankenphp", "run", "--config", "/etc/caddy/Caddyfile"]
+```
